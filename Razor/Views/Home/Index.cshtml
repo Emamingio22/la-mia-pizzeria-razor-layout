@@ -1,8 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>
+        1. Dichiarare una variabile valorizzandola con il nostro nome.
+        Dichiarare un'altra variabile valorizzandola con il nostro cognome.
+        Stampare il nostro nome e cognome all'interno di un tag h2.
+    </p>
+
+    @{
+        string nome = "Emanuele";
+        string cognome = "Mingione";
+    }
+
+    <h2>@nome @cognome</h2>
 </div>
