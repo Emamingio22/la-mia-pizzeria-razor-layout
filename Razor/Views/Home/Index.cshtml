@@ -89,6 +89,11 @@
         (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
      </p>
 
-     
+     @{
+         dataOggi.AddDays(-7);
+     }
+     <p>a. Sette giorni fa era il @dataOggi.AddDays(-7).ToString("dd/MM/yyyy")</p>
+     <p>b. Oggi è @dataOggi.DayOfWeek</p>
+     <p>c. Tra un anno sarà @dataOggi.AddYears(1).DayOfWeek</p>
 </div>
  
